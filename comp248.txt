@@ -1,0 +1,153 @@
+
+package helloworld;
+
+import java.util.Scanner;
+
+public class hello
+{
+	
+	public static void main(String[] args)
+	{
+		
+		Scanner myKeyboard = new Scanner(System.in);
+		
+		int num;
+		int i;
+		
+		System.out.println("Enter an integer: ");
+		num = myKeyboard.nextInt();
+		
+		for (i = 1; i <= num; i++ )
+		{
+			
+			for (int j = 1; j <= i; j++)
+			{
+				System.out.print(j);
+			}
+			
+			System.out.println();
+		}
+		
+	}
+
+}
+
+OUTPUT:
+1
+12
+123
+
+
+
+
+----------------------///---------------------------------////--------------
+
+
+package helloworld;
+
+import java.util.Scanner;
+
+public class hello
+{
+	
+	public static void main(String[] args)
+	{
+		Scanner myKeyboard = new Scanner(System.in);
+		
+		int wdth;
+		
+		System.out.println("Enter the width of the diamond(odd integer): ");
+		wdth = myKeyboard.nextInt();
+		
+		int space = wdth/2;
+		int star = 1;
+		int counter = 0;
+	
+		
+		for (int i = 0; i < wdth-i; i++)
+		{
+			for (int j = 0; j < space; j++)
+				System.out.print(" ");
+			space--;
+			
+			for (int k = 0; k < star; k++)
+				System.out.print("*");
+			star +=2;
+			
+			System.out.println();
+			
+			counter++;
+		}
+		
+		space = 1;
+		star = wdth - 2;
+		
+		for (int i = 0; i <= wdth-counter; i++)
+		{
+			for (int j = 0; j < space; j++)
+				System.out.print(" ");
+			space++;
+			
+			for (int k = 0; k < star; k++)
+				System.out.print("*");
+			star -= 2;
+			
+			System.out.println();
+			
+		}
+		
+	}
+
+}
+
+
+OUTPUT:
+
+  *
+ ***
+*****
+ ***
+  *
+
+
+
+--------------------///------------------------------////------------------------------
+
+------------ NEXTLINE Example -------
+
+		Scanner myKeyboard = new Scanner(System.in);
+		
+		int hours;
+		String A, B, C;
+		
+		System.out.println("-----------------------------------------------------\r\n" + 
+				"\r\n" + 
+				"David's Internet Use Monthly Bill Program\r\n" + 
+				"\r\n" + 
+				"------------------------------------------------------\r\n" + 
+				"\r\n" + 
+				"How many hours did you use (whole number please):");
+		hours = myKeyboard.nextInt();
+		myKeyboard.nextLine();
+		System.out.println("Do you have package A, B or C?");
+		A = myKeyboard.nextLine(); 
+		B = myKeyboard.nextLine();
+		C = myKeyboard.nextLine();
+		
+		if (A.charAt(0) == 'A' | A.charAt(0) == 'a')
+			System.out.println("fuck you");
+		
+		if (B.charAt(0) == 'B' | B.charAt(0) == 'b')
+			System.out.println("fuck you2");
+		
+		if (C.charAt(0) == 'C' | C.charAt(0) == 'c')
+			System.out.println("fuck you3");
+			
+		myKeyboard.close();
+
+
+		
+
+
+
+
