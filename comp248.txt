@@ -146,7 +146,64 @@ OUTPUT:
 		myKeyboard.close();
 
 
+
+--------------------------//---------------------------------------///--------------------
+TUTORIAL 6
+
+package helloworld;
+
+import java.util.Scanner;
+
+public class hello
+{
+	
+	public static void main(String[] args)
+	{
+	
+		Scanner myKeyboard = new Scanner(System.in);
+				
+		int n, product;
 		
+		System.out.print("Enter an integer: ");
+		n = myKeyboard.nextInt();
+		
+		System.out.println();
+		
+		for (int i = 1; i <= n; i++)
+		{
+			System.out.print("    "+ i);	
+		}
+		
+ 		System.out.println("\n--------------------------------------");
+		
+ 		for (int i = 1; i <= n; i++)
+		{
+			System.out.print(i + "| ");
+			
+			for (int j = 1; j <= n; j++)
+			{
+				product = j*i;
+				
+				if(j == i)
+				{
+					System.out.print(" *   ");
+				
+				}
+				
+				else
+				System.out.print(" " + product + "  ");
+				
+				if (j == n)
+				System.out.println();
+		
+			}
+		}
+	}	
+	
+}
+	
+	
+	
 
 
 
